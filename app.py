@@ -1,14 +1,13 @@
 import os
 from flask import Flask, request, make_response, render_template
-import web
 
 app = Flask(__name__)
 app.config['DEBUG'] = bool(os.environ.get('DEBUG'))
 
-@app.route("/")
-def index():
-    name = request.form.get("name", "world")
-    return render_template("index.html", name=name)
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
+    return render_template("index.html")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
