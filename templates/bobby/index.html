@@ -1,0 +1,24 @@
+{% macro url(file) %}
+{{ url_for('static', filename=path + '/' + file) }}
+{% endmacro%}
+
+<html>
+<body>
+
+<a href="http://bobbymcferrin.com/images/press/BOBBYMCFERRIN07smile.jpg">
+<img src="{{ url('bobby.jpg') }}">
+</a>
+
+Comments are closed but don't worry!
+
+<br /><br />
+
+&lt;br&gt;
+br&gt;
+
+<br /><br />
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/ne6tB2KiZuk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+</body>
+</html>
