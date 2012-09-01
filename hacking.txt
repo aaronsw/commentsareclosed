@@ -1,0 +1,8 @@
+To add a new template (new_template_name):
+
+1. Add a folder with that template's name to the templates/ directory
+   (templates/new_template_name)
+
+2. If necessary, add static files to static/new_template_name/
+
+3. Add the name of that template to the TEMPLATES variable in config.py
