@@ -1,12 +1,10 @@
-{% macro url(file) %}
-{{ url_for('static', filename=path + '/' + file) }}
-{% endmacro%}
+{% import "/index.html" as macros with context %}
 
 <html>
 <body>
 
 <a href="http://bobbymcferrin.com/images/press/BOBBYMCFERRIN07smile.jpg">
-<img src="{{ url('bobby.jpg') }}">
+<img src="{{ macros.url('bobby.jpg') }}">
 </a>
 
 Comments are closed but don't worry!
