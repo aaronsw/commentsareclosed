@@ -1,0 +1,11 @@
+To add a new template (new_template_name):
+
+1. Add a folder with that template's name to the templates/ directory
+   (templates/new_template_name)
+
+2. If necessary, add static files to static/new_template_name/ To reference
+   URLs for static files in the jinja template, use the macro
+   {{ url(name_of_static_resource) }} which is defined in the default
+   index.html file.
+
+3. Add the name of that template to the TEMPLATES variable in config.py
