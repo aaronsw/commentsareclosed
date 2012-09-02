@@ -1,5 +1,5 @@
 # List of templates - custom URLs, really - which this site supports
 
-TEMPLATES = ([
+TEMPLATES = [
     'bobby',
-])
+]
